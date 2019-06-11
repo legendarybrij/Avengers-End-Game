@@ -45,3 +45,10 @@
 .card > .remove:hover {
   color: #d50000;
 }
+
+.card > .img-container:hover {
+  transform: rotate(360deg);
+  /* transform: scale(1.3); */
+  transition: all 1s;
+  background: radial-gradient(rgb(93, 194, 27), rgb(39, 31, 14));
+}
