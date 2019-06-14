@@ -2,73 +2,61 @@
   {
     "id": 1,
     "name": "ironman",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/35/IronMan-EndgameProfile.jpg",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/35/IronMan-EndgameProfile.jpg"
   },
   {
     "id": 2,
     "name": "captainamerica",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/CapAmerica-EndgameProfile.jpg",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/CapAmerica-EndgameProfile.jpg"
   },
   {
     "id": 3,
     "name": "scarletwitch",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/39/Scarlet_Witch_AIW_Profile.jpg",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/39/Scarlet_Witch_AIW_Profile.jpg"
   },
   {
     "id": 4,
     "name": "captainmarvel",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/f/fe/CapMarvel-EndgameProfile.jpeg",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/f/fe/CapMarvel-EndgameProfile.jpeg"
   },
   {
     "id": 5,
     "name": "blackwidow",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/9a/BlackWidow-EndgameProfile.jpg",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/9a/BlackWidow-EndgameProfile.jpg"
   },
   {
     "id": 6,
     "name": "spiderman",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/b/b0/Spider-Man_FFH_Profile.jpg",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/b/b0/Spider-Man_FFH_Profile.jpg"
   },
   {
     "id": 7,
     "name": "loki",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/7d/Thor_Ragnarok_Textless_Character_Posters_03.jpg/revision/latest/scale-to-width-down/310?cb=20170918170640",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/7d/Thor_Ragnarok_Textless_Character_Posters_03.jpg/revision/latest/scale-to-width-down/310?cb=20170918170640"
   },
   {
     "id": 8,
     "name": "thor",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/13/Thor-EndgameProfile.jpg",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/13/Thor-EndgameProfile.jpg"
   },
   {
     "id": 9,
     "name": "hulk",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/a/a4/ProfHulkAvengersEndgamelicensingart001.jpg",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/a/a4/ProfHulkAvengersEndgamelicensingart001.jpg"
   },
   {
     "id": 10,
     "name": "gamora",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/6/61/Gamora_AIW_Profile.jpg",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/6/61/Gamora_AIW_Profile.jpg"
   },
   {
     "id": 11,
     "name": "starlord",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/96/Star-Lord_AIW_Profile.jpg",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/96/Star-Lord_AIW_Profile.jpg"
   },
   {
     "id": 12,
     "name": "doctorstrange",
-    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d9/Doctor_Strange_AIW_Profile.jpg",
-    "clicked": "false"
+    "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d9/Doctor_Strange_AIW_Profile.jpg"
   }
 ]

@@ -19,17 +19,8 @@ class App extends React.Component {
     random: friends,
     score: 0,
     highscore: 0,
-    clicked: "false"
+    clicked: []
   };
-
-  updateImageClick(id, array) {
-    for (var i = 0; i < array.length; i++) {
-      if (array[i].id === id) {
-        array[i].clicked = "true";
-      }
-    }
-    return array;
-  }
 
   getName(id, array) {
     for (var i = 0; i < array.length; i++) {
@@ -39,32 +30,55 @@ class App extends React.Component {
     }
   }
 
-  getClicked(name, array) {
-    for (var i = 0; i < array.length; i++) {
-      if (array[i].name === name) {
-        return array[i].clicked;
-      }
-    }
-  }
+  // getClicked(name, array) {
+  //   for (var i = 0; i < array.length; i++) {
+  //     if (array[i].name === name) {
+  //       return array[i].clicked;
+  //     }
+  //   }
+  // }
 
-  changecount = event => {
-    console.log(event);
-    let increaseCount = this.state.score + 1;
-    this.setState({ score: increaseCount });
+  changecount = () => {
+    
   };
 
-  sortArray = id => {
-    this.setState({ clicked: "false" });
+  clearClickedArray = () => {
+    this.setState({ clicked: [] });
+  };
+
+  makeClickedArray = (id) => {
     const name = this.getName(id, this.state.random);
-    const isClicked = this.getClicked(name, this.state.random);
-    this.setState({ clicked: isClicked });
-    this.updateImageClick(id, this.state.random);
+    var clickedName = this.state.clicked;
+    clickedName.unshift(name);
+    this.setState({clicked:clickedName});
+  }
+
+  sortArray = id => {
+    const name = this.getName(id, this.state.random);
+    //const name = this.getName(id, this.state.random);
+    if(this.state.clicked.includes(name))
+    {
+      if(this.state.score>this.state.highscore)
+      {
+      this.setState({highscore:this.state.score});
+      }
+      this.setState({score:0});
+      this.clearClickedArray();
+    }else{
+      let increaseCount = this.state.score + 1;
+      this.setState({ score: increaseCount });
+      this.makeClickedArray(id);
+    
+    }
+
+  
     // Filter this.state.friends for friends with an id not equal to the id being removed
     const filterFriends = randomSort(this.state.random);
     // Set this.state.friends equal to the new friends array
     this.setState({ random: filterFriends });
 
-    console.log(this.state);
+    console.log(this.state.clicked);
+    
   };
 
   render() {
