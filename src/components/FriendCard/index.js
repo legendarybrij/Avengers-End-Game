@@ -9,8 +9,8 @@ function FriendCard(props) {
     <div
       className="card"
       onClick={() => {
-        props.handleremove(props.id);
-        props.counting(props.id);
+        props.sortarray(props.id);
+        props.counting(event);
         // props.clicked(props.id);
       }}
     >

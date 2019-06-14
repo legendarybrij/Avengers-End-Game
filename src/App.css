@@ -1,11 +1,11 @@
-@font-face{
+@font-face {
   font-family: "Neon";
   src: url("font/Neon.ttf");
 }
 .title {
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: "Neon", "Impact", "Haettenschweiler", "Arial Narrow Bold",
     sans-serif;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
@@ -29,4 +29,10 @@
     sans-serif;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
     0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+}
+
+.howtoplay {
+  text-shadow: 0 0 5px rgb(43, 38, 38);
+  color: #e78a54;
+  font-family: "Impact", "Haettenschweiler", "Arial Narrow Bold";
 }
