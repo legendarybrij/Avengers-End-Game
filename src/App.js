@@ -19,7 +19,9 @@ class App extends React.Component {
     random: friends,
     score: 0,
     highscore: 0,
-    clicked: []
+    clicked: [],
+    status: "",
+    End: "https://media.giphy.com/media/xT0xejJnePNcOWoHOo/giphy.gif"
   };
 
   getName(id, array) {
@@ -38,47 +40,57 @@ class App extends React.Component {
   //   }
   // }
 
-  changecount = () => {
-    
-  };
+  changecount = () => {};
 
   clearClickedArray = () => {
     this.setState({ clicked: [] });
   };
 
-  makeClickedArray = (id) => {
+  makeClickedArray = id => {
     const name = this.getName(id, this.state.random);
     var clickedName = this.state.clicked;
     clickedName.unshift(name);
-    this.setState({clicked:clickedName});
-  }
+    this.setState({ clicked: clickedName });
+  };
 
   sortArray = id => {
     const name = this.getName(id, this.state.random);
     //const name = this.getName(id, this.state.random);
-    if(this.state.clicked.includes(name))
-    {
-      if(this.state.score>this.state.highscore)
-      {
-      this.setState({highscore:this.state.score});
+    if (this.state.score === friends.length) {
+      this.setState({
+        end: "https://i.kym-cdn.com/photos/images/original/001/486/752/445.gif"
+      });
+      this.setState({
+        status:
+          "You are the true hero Earth was waiting for!! You have saved our planet and successfully defeated Thanos"
+      });
+      if (this.state.score > this.state.highscore) {
+        this.setState({ highscore: this.state.score });
       }
-      this.setState({score:0});
+      this.setState({ score: 0 });
       this.clearClickedArray();
-    }else{
-      let increaseCount = this.state.score + 1;
-      this.setState({ score: increaseCount });
-      this.makeClickedArray(id);
-    
+    } else {
+      if (this.state.clicked.includes(name)) {
+        if (this.state.score > this.state.highscore) {
+          this.setState({ highscore: this.state.score });
+        }
+        this.setState({ score: 0 });
+        this.clearClickedArray();
+      } else {
+        this.setState({ status: "" });
+        this.setState({ end: "" });
+        let increaseCount = this.state.score + 1;
+        this.setState({ score: increaseCount });
+        this.makeClickedArray(id);
+      }
     }
 
-  
     // Filter this.state.friends for friends with an id not equal to the id being removed
     const filterFriends = randomSort(this.state.random);
     // Set this.state.friends equal to the new friends array
     this.setState({ random: filterFriends });
 
     console.log(this.state.clicked);
-    
   };
 
   render() {
@@ -95,18 +107,18 @@ class App extends React.Component {
     return (
       <Wrapper>
         <ul class="nav nav-pills nav-fill col-md-12">
-          {/* <img id="thanos" src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/c/c4/Endgame_54.png/revision/latest?cb=20190514011556"/> */}
           <li class="nav-item">
             <h1 className="title">Avengers End Game</h1>
             <h4 className="howtoplay">
-              Click on images to Attack Thanos but don't click on same image
-              twice else you will get killed
+              Click on Avengers heros to Attack Thanos but don't click on same
+              image twice else you will get killed
             </h4>
             <h4 className="score">Current Score: {this.state.score}</h4>
             <h4 className="highscore">High Score: {this.state.highscore}</h4>
+            <h4 className="gameover">{this.state.status}</h4>
           </li>
         </ul>
-
+        <img id="thanos" src={this.state.end} />
         {friendsCard}
       </Wrapper>
     );
