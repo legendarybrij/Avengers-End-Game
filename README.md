@@ -7,6 +7,7 @@ A web app that lets users play the memory game. Once user clicks on the pic, all
 
 ## Demo
 * Heroku: [React Version Avenger's Memory Game](https://avengersforever.herokuapp.com/)
+* AWS: [React Version Avenger's Memory Game] (https://master.doyzuaqbzaevh.amplifyapp.com/)
 
 
 <img src="https://i.ibb.co/C2Y5PLQ/avengers50percent.png" width="400"/>
