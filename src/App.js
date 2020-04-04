@@ -111,7 +111,7 @@ class App extends React.Component {
             <h1 className="title">Avengers End Game</h1>
             <h4 className="howtoplay">
               Click on Avengers heros to Attack Thanos but don't click on same
-              image twice else you will get killed
+              image twice else you will get killed!!
             </h4>
             <h4 className="score">Current Score: {this.state.score}</h4>
             <h4 className="highscore">High Score: {this.state.highscore}</h4>
